@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fund Me App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(
+          pink,
+          rgb(167, 167, 221),
+          rgb(176, 255, 176)
+        );
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+        height: 100vh;
+      }
+      .cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow-x: hidden;
+      }
+
+      #header {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      #header img {
+        width: 150px; /* Set image width */
+        height: auto; /* Maintain aspect ratio */
+      }
+
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .button-row {
+        display: flex;
+        gap: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        background-color: #000000;
+        color: white;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 16px;
+        width: 150px; /* Set a fixed width for all buttons */
+      }
+      button:hover {
+        background-color: rgb(6, 6, 80);
+      }
+
+      input {
+        padding: 8px;
+        margin: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        width: 100px;
+      }
+
+      label {
+        margin: 5px;
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: 600px) {
+        input {
+          width: 80px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div id="header">
+        <img
+          src="https://www.blocknative.com/hubfs/Core%20Theme%20Images/wallet%20registry%20hero%20image.png"
+          alt="Logo"
+        />
+      </div>
+      <div class="button-container">
+        <div class="button-row">
+          <button id="connectButton">Connect</button>
+          <button id="balanceButton">Get Balance</button>
+        </div>
+        <div class="button-row">
+          <button id="withdrawButton">Withdraw</button>
+          <button id="fundButton">Fund</button>
+        </div>
+      </div>
+      <div class="input-container">
+        <label for="fund">Fund Amount in ETH</label>
+        <input id="ethAmount" placeholder="0.1" type="number" />
+      </div>
+    </div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
