@@ -34,6 +34,8 @@ Welcome to FundMe, an Ethereum-based decentralized application (dApp) designed t
 ## Development
 
 - **Technologies Used:** FundMe is built using Ethereum smart contracts, web3.js, and MetaMask for wallet integration.
+
+- For this project the backened part is Hardhat-fundme-fcc repository which can be easily found on my github.
   
 - **Contributing:** Contributions are welcome! Feel free to submit pull requests or open issues on our [GitHub repository](https://github.com/Abhishek-465/Fund-me-app).
   
